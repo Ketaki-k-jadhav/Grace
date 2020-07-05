@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css"></link>
+    <script src='Generate.js'></script>
     <title>Sign In </title>
 </head>
-<body link='limegreen' vlink='limegreen'alink='limegreen'>
+<body link='maroon' vlink='maroon'alink='maroon'>
     
     <h1>Sign In</h1>
     <div>
         <form action='Update.html' method='get' align='center'>
             <label for='Username' class='text2'>Username</label>
             <br>
-            <input type= 'text' class='text4' style='color:maroon;' placeholder='Username' required>
+            <input type= 'text' class='text4' style='color:maroon;' placeholder='Username' required >
             <br>
             <label for='Password' class='text2'>Password</label>
             <br>
             <input type= 'password' class='text4' style='color:maroon;' placeholder='Password' required>
             <br>
+            <label for='Password' class='text2'>Generate password</label>
+            <br>
+            <input type='text' class='button9' style='color:maroon;' id='display'>
+            <br>
+            <button onclick='generate()' class='button3' style='color:maroon;'>Generate</button>
+            <br>
+    
             <p style='font-size:20px'>Password should be at least 8 characters,<br>
             Include at least one uppercase and lowercase letter,<br>
             Include symbols such as @,#,_,-,&,etc</p>
     
             <input type='submit'  style='color: maroon;' class='button3'>
             <input type= 'reset'  style='color: maroon;' class='button3'>
-
-        </form>
-        </div>
         
-    
+        </form>
+    </div>
 </body>
 </html>
